@@ -26,10 +26,10 @@ public class CalculatorJava {
             throw new IllegalArgumentException("Неправильный формат чисел");
         }
         if (a > 10 || a < 1) {
-            throw new IllegalArgumentException("Первое число больше 10");
+            throw new IllegalArgumentException("Первое число больше 10 или меньше 1");
         }
         if (b > 10 || b < 1) {
-            throw new IllegalArgumentException("Второе число больше 10");
+            throw new IllegalArgumentException("Второе число больше 10 или меньше 1");
         }
         int result = switch (tokens[1]) {
             case "+" -> a + b;
